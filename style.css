@@ -10,6 +10,32 @@ a{
     text-decoration: none;
 }
 
+.switch{
+background-color: black;
+border-radius: 1000px;
+border: none;
+position: relative;
+cursor: pointer;
+display: flex;
+outline: none;
+
+&::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    left: 0;
+    right: unset;
+    background-color: white;
+    border-radius: 100px;
+    transition: all .5s ease all;
+    box-shadow: rgba(0, 0, 0, .2) 0px 0px 2px;
+}
+
+}
 .contenedor{
     padding: 60px; ;
     width: 90%;
@@ -89,6 +115,10 @@ animation: Mover1 2s ;
     to{
         transform: translateY(0%);
     }
+}
+
+.logo{
+    margin-top: 50px;
 }
 
 .logo h1{
